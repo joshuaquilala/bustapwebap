@@ -2,47 +2,48 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/style.css"/>
+    
+    <style> 
+        body {
+            
+          background-image: url("img/bus.png");
+          background-repeat: no-repeat, repeat;
+          background-position: center;
+          height: 70vw;
+          width: 100%;
+        }
+        </style>
 </head>
 
+
 <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
     
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
-    
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyAhYb9Oleu-TVRcRHp-Um5-B8-dpQm6LWs",
-        authDomain: "bustap-c4e3e.firebaseapp.com",
-        databaseURL: "https://bustap-c4e3e-default-rtdb.firebaseio.com",
-        projectId: "bustap-c4e3e",
-        storageBucket: "bustap-c4e3e.appspot.com",
-        messagingSenderId: "28563380387",
-        appId: "1:28563380387:web:8b9681be39c111720fc716",
-        measurementId: "G-MWS9FTMGMF"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-  
-      function shoBus() {
-        firebase.firestore().ref("btv1_bus")
-      }
-    </script>
-  
-<body>
     <div class="center">
 <h1>BUS INFORMATION</h1>
 
-<div class="content">
-    <form id="add-bus-form"></form>
-    <ul id ="bus-list"></ul>
+
 </div>
-</div>
+
+
+<table class="tablelayout">
+    <tr>
+            <th>Bus Number</th>
+            <th>Bus Type</th> 
+            <th>Bus Capacity</th>
+    </tr>
+    <tr>
+            <td> </td>
+            <td> </td> 
+            <td> </td>
+    </tr>
+
+</table>
+
+
+
+
+
 </body>
 
 </html>

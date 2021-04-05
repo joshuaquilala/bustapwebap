@@ -107,9 +107,39 @@ img{
   grid-row-start: 5;
   grid-row-end: 8;
 }
+.gallery__background {
+
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
 
 .content:hover .content-overlay{
   opacity: 1;
+}
+
+table, th, td {
+  border: 1px solid black;
+  
+ 
+}
+th {
+  height: 50px;
+}
+td {
+  height: 30px;
+}
+
+
+.tablelayout{
+  border-radius: 25px;
+  background: #74aaf7;
+  padding: 20px; 
+  width: 100%;
+  height: auto;  
+
+  align-items: center;
 }
 
 
